@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="anima-eng.css" type="text/css" rel="stylesheet">
+    <style>
+        /*
+         engrenagem girando muito rápido
+         varia de acordo com a duração da animação
+         linear para manter a mesma velocidade
+         infinito para loopar
+        */
+        .minha_engrenagem {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            animation: engrena 5s infinite alternate;
+        }
+        /*
+        segunda engrenagem
+        */
+        .minha_engrenagem2 {
+            position: absolute;
+            rotate: 0deg;
+            top: 120px;
+            left: 450px;
+            animation: engrena2 5s infinite alternate;
+        }
+        /*
+         rotação da engrenagem
+        */
+        @keyframes engrena
+        {
+            0% { rotate: 0deg; }
+            100% { rotate: 360deg; }
+        }
+        @keyframes engrena2
+        {
+            0% { rotate: 0deg; }
+            100% { rotate: -360deg; }
+        }
+    </style>
+    <title>Animação engrenagem</title>
+</head>
+<body>
+    <img src="engrenagem.png" class="minha_engrenagem">
+    <img src="engrenagem.png" class="minha_engrenagem2">
+</body>
+</html>

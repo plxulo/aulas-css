@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" type="text/css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>?</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="title centralizar"> bem vindo </h1>
+        <h2 class="subtitle centralizar"> voce responderá um formulario agora </h2>
+    </header>
+
+    <section class="botao centralizar">
+
+        <button class="nao-quero">
+            não quero
+        </button>
+
+        <button id="mostrar-formulario" class="quero" onclick="checkButton()">
+            estou pronto
+        </button>
+
+    </section>
+
+    <section id="formulario" class="centralizar aparecer">
+
+        <form>
+
+            <p>Por acaso seu nome é William?</p>
+            <input type="radio" id="nome-sim" name="nome">
+            <label for="nome-sim">Sim</label>
+            <input type="radio" id="nome-nao" name="nome">
+            <label for="nome-nao">Não</label>
+
+            <p>Você faz aniversário dia 22 de fevereiro?</p>
+            <input type="radio" id="data-sim" name="data">
+            <label for="nome-sim">Sim</label>
+            <input type="radio" id="data-nao" name="data">
+            <label for="nome-nao">Não</label>
+
+        </form>
+
+    </section>
+
+    <section class="botao centralizar">
+
+        <button id="enviar" class="quero aparecer">
+            enviar
+        </button>
+
+    </section>
+
+</body>
+</html>

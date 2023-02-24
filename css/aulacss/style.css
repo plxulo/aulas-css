@@ -1,0 +1,82 @@
+/*
+ cria a classe "centralizado" que pode ser utilizada para centralizar
+ qualquer elemtento html, por exemplo div class="menu centralizado"
+ neste caso ele aplicará os atributos abaixo
+*/
+
+.centralizado {
+    display: flex;
+    flex-direction: row; /* alinha em coluna = vertical em linha = horizontal */
+    justify-content: center; /* alinha na direção principal */
+    justify-items: center; /* para alinhar qualquer coisa ao centro use smp todos */
+    align-items: center;
+    align-content: center;
+}
+
+/*
+ altera a div de classe principal no código html
+ transformando-a em um retangulo com bordas
+*/
+
+.principal {
+    position: relative; /* top left não é mais do monitor e sim do container */
+    width: 500px;
+    height: 250px;
+    background: wheat;
+    color: green;
+    border-style: solid;
+    border-width: 5px;
+    border-color: green;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* space-around = igualar o espaçamento entre elementos */
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+/*
+ altera a div de classe "interna" no código html
+ transformando-a em um circulo
+ dentro da div "principal"
+ com um texto alinhado ao centro por meio dos atributos comentados
+*/
+
+.interna {
+    width: 100px;
+    height: 100px;
+    background: wheat;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: green;
+}
+
+/*
+ cria uma "navbar" customizando a classe menu em html
+ é um retangulo preto centralizado na div "principal"
+ customizada acima
+*/
+
+.menu {
+    width: 150px;
+    height: 50px;
+    background: black;
+    color: white;
+    position: absolute;
+    left: 175px;
+    top: 0px;
+    transition: 1s;
+}
+
+/*
+ transição suave, ao colocar o mouse em cima do menu
+ o mesmo ficara com fundo branco e fonte preta
+ a suavidade pode depender de acordo com aonde
+ o atributo transition for inserido
+*/
+
+.menu:hover {
+    background: white;
+    color: black;
+}
